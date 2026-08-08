@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Carta Todo En Uno</title>
+    <meta name="description" content="Menú digital Todo En Uno">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <!-- Portada -->
+        <div id="cover" class="page cover-page active">
+            <div class="cover-content">
+                <div class="logo-container">
+                    <h1 class="logo-text">TODO EN UNO</h1>
+                    <div class="stars">★★★★★</div>
+                </div>
+                <h2 class="subtitle">NUESTRA CARTA</h2>
+                <button class="open-book-btn" onclick="openBook()">ABRIR MENÚ</button>
+                <img src="logo.png" alt="Ilustración Todo En Uno" class="cover-image">
+                <div class="social-footer">
+                    <span>@TODOENUNOOO_</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contenedor del Libro -->
+        <div id="book" class="book-container hidden">
+            
+            <nav class="category-nav">
+                <ul id="tabs" class="tabs">
+                    <!-- Los tabs se generarán por JS -->
+                </ul>
+            </nav>
+
+            <div class="pages-wrapper" id="pages-wrapper">
+                <!-- Las páginas se generarán por JS -->
+            </div>
+
+            <div class="book-controls">
+                <button class="nav-btn prev-btn" onclick="prevPage()">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                    Anterior
+                </button>
+                <span class="page-indicator" id="page-indicator">1 / 7</span>
+                <button class="nav-btn next-btn" onclick="nextPage()">
+                    Siguiente
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </button>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
