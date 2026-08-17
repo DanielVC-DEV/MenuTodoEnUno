@@ -8,7 +8,7 @@ const menuData = [
             { name: "Completo Palta", price: "$3.200" },
             { name: "Completo Todo En Uno", price: "$3.200" },
             { name: "Completo vegetariano", price: "$3.200" },
-            { name: "Hot dog", price: "$2.200" }
+            { name: "Hot dog", price: "$2.400" }
         ],
         footer: "¡Todos los agregados son a tu gusto!",
         extraFooter: {

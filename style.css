@@ -163,6 +163,20 @@ body {
     color: var(--text-light);
 }
 
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--text-main);
+    text-decoration: none;
+    transition: color 0.2s, transform 0.2s;
+}
+
+.social-link:hover {
+    color: var(--accent-coral);
+    transform: translateY(-1px);
+}
+
 /* LIBRO (CONTENIDO) */
 .book-container {
     width: 100%;
