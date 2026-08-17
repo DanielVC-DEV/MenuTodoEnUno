@@ -4,10 +4,10 @@ const menuData = [
         title: "COMPLETOS",
         badge: "Nuestra especialidad",
         items: [
-            { name: "Completo Italiano", price: "$2.990" },
-            { name: "Completo Palta", price: "$2.990" },
-            { name: "Completo Todo En Uno", price: "$2.990" },
-            { name: "Completo vegetariano", price: "$2.990" },
+            { name: "Completo Italiano", price: "$3.200" },
+            { name: "Completo Palta", price: "$3.200" },
+            { name: "Completo Todo En Uno", price: "$3.200" },
+            { name: "Completo vegetariano", price: "$3.200" },
             { name: "Hot dog", price: "$2.200" }
         ],
         footer: "¡Todos los agregados son a tu gusto!",
@@ -21,12 +21,12 @@ const menuData = [
         title: "PREMIUM",
         desc: '"Vienesas Premium – Porque tu completo merece lo mejor, con ingredientes seleccionados y sabor que se nota en cada mordisco."',
         items: [
-            { name: "Vienesa Llanquihue", price: "$3.400" },
-            { name: "As base queso", desc: "+2 agregados", price: "$4.700" },
-            { name: "As", desc: "+3 agregados", price: "$4.700" }
+            { name: "Vienesa Llanquihue", price: "$3.700" },
+            { name: "As base queso", desc: "+2 agregados", price: "$4.800" },
+            { name: "As", desc: "+3 agregados", price: "$4.800" }
         ],
         extraFooter: {
-            title: "AGREGADOS SIN COSTO PARA EL COMPLETO",
+            title: "AGREGADOS SIN COSTO",
             content: "Tomate - Palta - Maíz - Lechuga - Chucruts - Salsa americana"
         }
     },
@@ -45,7 +45,7 @@ const menuData = [
             { name: "Mechada italiana", desc: "(o dos agregados)", price: "$6.200" }
         ],
         extraFooter: {
-            title: "AGREGADOS SIN COSTO PARA EL COMPLETO",
+            title: "AGREGADOS SIN COSTO ",
             content: "Tomate - Palta - Maíz - Lechuga - Chucruts - Salsa americana"
         }
     },
@@ -74,15 +74,15 @@ const menuData = [
         id: "tomar",
         title: "PARA TOMAR",
         items: [
-            { name: "Bebida lata", price: "$1.600" },
+            { name: "Bebida lata", price: "$1.700" },
             { name: "Bebida de medio", price: "$1.900" },
             { name: "Bebida energética", price: "$2.100" },
             { name: "Agua mineral", price: "$1.200" },
             { name: "Jugo natural de pulpa", price: "$1.800" },
             { name: "Jugo", price: "$1.500" },
-            { name: "Café tradicional", price: "$1.400" },
-            { name: "Té", price: "$1.400" },
-            { name: "Milo", price: "$1.600" },
+            { name: "Café tradicional", price: "$1.500" },
+            { name: "Té", price: "$1.500" },
+            { name: "Milo", price: "$1.700" },
             { name: "Chocolate caliente", price: "$2.000" },
             { name: "Café capuchino", price: "$2.000" },
             { name: "Café mocachinno", price: "$2.000" }
@@ -96,7 +96,6 @@ const menuData = [
             { name: "Cebolla", price: "$800" },
             { name: "Queso", price: "$1.400" },
             { name: "Pepinillo", price: "$400" },
-            { name: "Ají verde", price: "$400" },
             { name: "Champiñones", price: "$1.000" },
             { name: "Vienesa", price: "$700" }
         ]
@@ -177,7 +176,7 @@ function init() {
 
         html += `
             <div style="text-align: center; margin-top: 30px; padding-bottom: 20px;">
-                <img src="logo.png" alt="Logo Todo En Uno" style="width: 120px; height: auto; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.15);">
+                <img src="Logo.jpeg" alt="Logo Todo En Uno" style="width: 170px; height: auto; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.15);">
             </div>
         `;
 
