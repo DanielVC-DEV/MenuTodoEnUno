@@ -74,31 +74,36 @@ body {
     border: 3px solid var(--text-main);
     outline: 2px dashed var(--text-main);
     outline-offset: -10px;
-    width: 88%;
-    height: 88%;
+    width: 90%;
+    height: 92%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
+    padding: clamp(1rem, 5vw, 2rem);
     text-align: center;
     border-radius: 20px;
     box-shadow: 8px 8px 0 rgba(26,26,26,0.9);
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+.cover-content::-webkit-scrollbar {
+    display: none;
 }
 
 .logo-text {
     font-family: 'Outfit', sans-serif;
     font-weight: 800;
-    font-size: 3.3rem;
-    line-height: 1;
+    font-size: clamp(2rem, 9vw, 3.3rem);
+    line-height: 1.05;
     text-transform: uppercase;
     color: var(--text-main);
     letter-spacing: -1px;
 }
 
 .stars {
-    font-size: 1.3rem;
-    margin-top: 0.6rem;
+    font-size: clamp(1rem, 4vw, 1.3rem);
+    margin-top: 0.5rem;
     letter-spacing: 6px;
     color: var(--accent-orange);
 }
@@ -106,8 +111,8 @@ body {
 .subtitle {
     font-family: 'Playfair Display', serif;
     font-style: italic;
-    font-size: 1.4rem;
-    margin: 1.6rem 0;
+    font-size: clamp(1.1rem, 4.5vw, 1.4rem);
+    margin: clamp(0.8rem, 3vh, 1.6rem) 0;
     font-weight: 700;
     position: relative;
 }
@@ -123,21 +128,22 @@ body {
 }
 
 .cover-image {
-    width: 68%;
-    max-width: 300px;
+    width: 55%;
+    max-width: 260px;
     height: auto;
-    margin: 1.4rem auto;
+    margin: clamp(0.8rem, 3vh, 1.4rem) auto;
     border-radius: 16px;
     box-shadow: 5px 5px 0 rgba(26,26,26,0.9);
     object-fit: cover;
+    flex-shrink: 0;
 }
 
 .open-book-btn {
     background-color: var(--text-main);
     color: var(--primary-yellow);
     border: none;
-    padding: 1rem 2.2rem;
-    font-size: 1.2rem;
+    padding: clamp(0.75rem, 3vh, 1rem) 2.2rem;
+    font-size: clamp(1rem, 4vw, 1.2rem);
     font-weight: 800;
     border-radius: 50px;
     cursor: pointer;
@@ -145,7 +151,8 @@ body {
     letter-spacing: 2px;
     box-shadow: 0 5px 0 0 rgba(26,26,26,0.35);
     transition: transform 0.15s, box-shadow 0.15s;
-    margin-top: 1.6rem;
+    margin-top: clamp(0.8rem, 3vh, 1.6rem);
+    flex-shrink: 0;
 }
 
 .open-book-btn:active {
@@ -155,12 +162,13 @@ body {
 
 .social-footer {
     margin-top: auto;
-    padding-top: 1.4rem;
+    padding-top: clamp(0.8rem, 3vh, 1.4rem);
     font-weight: 700;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     letter-spacing: 1px;
     text-align: center;
     color: var(--text-light);
+    flex-shrink: 0;
 }
 
 .social-link {
