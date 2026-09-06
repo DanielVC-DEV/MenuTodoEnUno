@@ -78,7 +78,6 @@ const menuData = [
             { name: "Bebida de medio", price: "$1.900" },
             { name: "Bebida energética", price: "$2.100" },
             { name: "Agua mineral", price: "$1.200" },
-            { name: "Jugo natural de pulpa", price: "$1.800" },
             { name: "Jugo", price: "$1.500" },
             { name: "Café tradicional", price: "$1.500" },
             { name: "Té", price: "$1.500" },
